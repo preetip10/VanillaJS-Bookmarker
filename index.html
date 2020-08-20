@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+ <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bookmaarker</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body  onload="fetchBookmarks()">
+        <div class="container mt-4 mr-auto text-center">
+            <div class="jumbotron">
+                <h4 class="display-5">Bookmark your favorite sites</h4>
+                <form id="myForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="site-name" id="site-name" 
+                        Placeholder="Please enter your site name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="url">URL</label>
+                        <input type="text" name="url" id="url" 
+                        Placeholder="Please enter your site URL" class="form-control">
+                    </div>
+                    <button class="btn btn-primary btn-lg" value="submit">Submit</button>
+                </form>
+            </div>
+
+            <div id="bookmarks-result">
+
+            </div>
+                
+            
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+</html>
